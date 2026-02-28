@@ -1,9 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Budget Tech India — Best Gadget Reviews for Students",
-  description: "Honest budget tech reviews, trending gadgets, and best deals in India for students and professionals.",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://smartdealtech.in"),
+  title: "SmartDealTech.in — Best Gadget Reviews for Students",
+  description: "SmartDealTech brings honest budget tech reviews, trending gadgets, and best deals in India for students and professionals.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -49,8 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         }}>
           <Link href="/" style={{ textDecoration: "none" }}>
             <span className="font-display" style={{ fontSize: "1.3rem", fontWeight: 800 }}>
-              <span className="gradient-text">Budget</span>
-              <span style={{ color: "var(--text)" }}> Tech India</span>
+              <span className="gradient-text">SmartDealTech</span>
             </span>
           </Link>
 
@@ -87,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               
               <div>
                 <div className="font-display" style={{ fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px" }}>
-                  <span className="gradient-text">Budget</span> Tech India
+                  <span className="gradient-text">SmartDealTech</span>
                 </div>
                 <p style={{ color: "var(--muted)", fontSize: "0.85rem", maxWidth: "240px", lineHeight: 1.6 }}>
                   Honest reviews and best tech deals for Indian students and professionals.
@@ -117,7 +118,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             <div style={{ borderTop: "1px solid var(--border)", paddingTop: "20px", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-              <p style={{ color: "var(--muted)", fontSize: "0.8rem" }}>© 2026 Budget Tech India. All Rights Reserved.</p>
+              <p style={{ color: "var(--muted)", fontSize: "0.8rem" }}>© 2026 SmartDealTech. All Rights Reserved.</p>
               <p style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
                 ⚠️ As an Amazon Associate, we earn from qualifying purchases.
               </p>
