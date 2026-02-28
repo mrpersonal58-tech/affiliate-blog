@@ -99,9 +99,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {["Home", "Blog", "About", "Contact"].map(link => (
                     <Link key={link} href={`/${link === "Home" ? "" : link.toLowerCase()}`}
-                      style={{ color: "var(--muted)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.2s" }}
-                      onMouseEnter={e => (e.currentTarget.style.color = "var(--text)")}
-                      onMouseLeave={e => (e.currentTarget.style.color = "var(--muted)")}
+                      className="footer-link"
+                      style={{ textDecoration: "none", fontSize: "0.9rem" }}
                     >{link}</Link>
                   ))}
                 </div>

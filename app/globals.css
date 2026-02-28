@@ -136,6 +136,13 @@ body {
 }
 .nav-link:hover::after { width: 100%; }
 
+/* Footer link hover */
+.footer-link {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.footer-link:hover { color: var(--text); }
+
 /* Trending ticker */
 @keyframes ticker {
   from { transform: translateX(0); }
